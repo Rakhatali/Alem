@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.signup.SignUpFragment">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/signup_log_editTv"
+        android:paddingStart="16dp"
+        android:hint="@string/log"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/app_margin"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/signup_password_editTv"
+        android:paddingStart="16dp"
+        android:hint="@string/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/signup_log_editTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/app_margin"/>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/signup_name_editTv"
+        android:paddingStart="16dp"
+        android:hint="@string/name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/signup_password_editTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/app_margin"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/signup_surname_editTv"
+        android:paddingStart="16dp"
+        android:hint="@string/surname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/signup_name_editTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/app_margin"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/signup_patronymic_editTv"
+        android:paddingStart="16dp"
+        android:hint="@string/patronymic"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/signup_surname_editTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/app_margin"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/signup_id_editTv"
+        android:paddingStart="16dp"
+        android:hint="@string/id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/signup_patronymic_editTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/app_margin"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signup_btn_reg"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/app_margin"
+        android:layout_marginBottom="@dimen/app_margin"
+        android:backgroundTint="@color/main"
+        android:text="@string/registration"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
